@@ -20,6 +20,12 @@ The main difference between Continuous Delivery and Deployment is that with deli
 - Jenkins is an open source automation server.
 - Java-based program working with Windows, macOS, & Linux.
 
+### Why use Jenkins?
+
+- Open-Source
+- Easy-to-use
+- AWS, netflix, HMRC, Home Offic, NASA, use it. Even though they can afford any software, they go with Jenkins which is free (Key point - Open-Source)
+
 ### What are the Stages to Jenkins?
 
 1. Create a Jenkins Job
