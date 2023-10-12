@@ -74,7 +74,9 @@ uname -a
     - Red: Failed
     - Grey: Untested
   - Next will be a weather symbol, this is dependant of the ratio of successful test runs
-    - Sunny: No fails
-    - Thunder: No success
+    - Sunny: 100%
+    - Thunder: 0%
     - Partial Cloudy: Some fails, some Success
+    - Rainy: 0%<
+    - Cloudy: 50%
   - You will also find three columns showing the last time since, test pass, test fail and time taken to run test.

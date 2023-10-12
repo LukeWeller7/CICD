@@ -14,3 +14,6 @@
   - Private Key - Enter directly
   - Add
   - Copy your private key in exact.
+
+best practices
+how to approach

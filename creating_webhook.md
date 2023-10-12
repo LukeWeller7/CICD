@@ -15,32 +15,43 @@
 ### Creating Jenkins Job
 1. Go to Jenkins and on the main page select New Item  
 ![](images/webhook3.png)
-2. Enter the name of Job
-3. Select Freestyle
-4. Select Ok  
+2. On the create new job page, complete the following:
+   1. Enter the name of Job
+   2. Select Freestyle 
+   3. Select Ok  
 ![](images/webhook4.png)
-5. Under General first fill out the description
-6. In Discard old Builds - Max # = 3
-7. GitHub Project - Project URL - HTTPS URL from your GitHub repo  
+3. General Tab
+   1. Fill out the description 
+   2. Select "Discard old builds"
+   3. For "Max # of builds to keep", enter 3
+   4. Select "GitHub project"
+   5. For "Project URL", enter the HTTPS URL from your GitHub repo
 ![](images/webhook5.png)
-8. In Office 365 Connector, select Restrict where this project can be run
-9. For the label, type in the name of the agent node you use.  
+4. Office 365 Connector
+   1. Select "Restrict where this project can be run"
+   2. For "Label Expression", enter the agent node you want to use
 ![](images/webhook6.png)
-10. In Source Code Management, select Git
-11. In repo URL, paste in the SSH URL from GitHub
-12. Credentials, select add
-    1. For Kind, select SSH username and private key
-    2. Username - naming convention
-    3. Private Key - Enter Directly - Add  
+5. Source Code Management
+   1. Select "Git"
+   2. In "Repositories", for "Repository URL", enter the SSH URL from your GitHub repo
+   3. For "Credentials", select "Add" to add your private key, if you have already done this, please select your ey name from the dropdown menu and skip step **iv**
+   4. In the "Add" dropdown, select "Jenkins"
+       1. For Kind, select "SSH username and private key"
+       2. Username - use a naming convention
+       3. Private Key - Enter Directly - Add - Enter your private SSH key linked to your GiHub repo
 ![](images/webhook8.png)
-13. Branch Specifier - */main  
-![](images/webhook7.png)
-14. Under Build Triggers, Select GitHub hook trigger
-15. Under Build Environment, select Provide Node & npm  
-![](images/webhook9.png)
-16. Under Build, select Add step - Execute Shell
-17. Type in the shell commands you wish to run
-18. Apply
-19. Save  
+   5. For "Branch Specifier", enter */main  
+   ![](images/webhook7.png)
+6. Build Triggers
+   1. Select "GitHub hook trigger for GITScm polling"
+7. Build Environment
+   1. Select "Provide Node & npm bin/ folder to PATH"  
+   ![](images/webhook9.png)
+8. Build
+   1. Select "Add build step"
+   2. From dropdown select "Execute Shell"
+   3. In "Command", enter the commands to run
+9. Apply
+10. Save  
 ![](images/webhook10.png)
 
